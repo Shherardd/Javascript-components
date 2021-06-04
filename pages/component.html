@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <a href="/">Back Home</a>
+    <div class="container">
+      <div class="left__wrapper">
+        <div class="left__wrapper-header">
+          <div class="header-item"><p></p></div>
+          <div class="header-item"><p></p></div>
+          <div class="header-item"><p></p></div>
+          <div class="header-item"><p></p></div>
+        </div>
+        <div class="left__wrapper-content">
+          <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae sequi recusandae quasi corporis fugit dolorum eveniet facere voluptatibus tempore culpa dolores distinctio iure molestias eius, unde quis quos totam commodi?
+          </p>
+        </div>
+      </div>
+      <div class="right__wrapper">
+        <div class="card__wrapper">
+          <div class="card">
+            <p>text</p>
+            <button onclick="addText()">Add Text</button>
+          </div>
+          <div class="card">
+            <p>text</p>
+            <button onclick="reset()">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <p>Este componente es el resultado del siguiente requerimiento</p>
+    <img src="/assets/component-requirement.JPG"  class="requerimiento" alt="diagrama de requerimiento">
+    <script type="module" src="/src/main.ts"></script>
+    <script>
+        var addText = () => {
+        let text = document.querySelector('.left__wrapper-content p')
+        text.innerText += `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae sequi recusandae quasi corporis fugit dolorum eveniet facere voluptatibus tempore culpa dolores distinctio iure molestias eius, unde quis quos totam commodi?`
+        }
+        var reset = () => {
+        let text = document.querySelector('.left__wrapper-content p')
+        text.innerText = `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae sequi recusandae quasi corporis fugit dolorum eveniet facere voluptatibus tempore culpa dolores distinctio iure molestias eius, unde quis quos totam commodi?`
+        }
+    </script>
+  </body>
+</html>

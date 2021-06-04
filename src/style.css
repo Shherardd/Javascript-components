@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+  color: black;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  padding: 1rem;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: stretch;
+  height: auto;
+  padding: 2rem 0;
+  border-radius: 15px;
+  border: 2px black solid;
+}
+
+.left__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 0;
+  flex-shrink: 1;
+  min-width: 45%;
+}
+
+.left__wrapper-header {
+  display: flex;
+  justify-content: stretch;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.left__wrapper-header .header-item {
+  flex-grow: 1;
+  border-radius: 15px;
+  border: 2px red solid;
+  overflow-x: hidden;
+}
+
+.left__wrapper-header .header-item p {
+  height: 100%;
+  width: 100%;
+  background-color: antiquewhite;
+}
+
+.left__wrapper-content {
+  flex-grow: 3;
+  flex-basis: 0;
+  border-radius: 15px;
+  border: 2px black solid;
+  overflow: visible;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.left__wrapper-content p {
+  border-radius: 15px;
+  border: 2px red solid;
+}
+
+.right__wrapper {
+  flex-basis: 0;
+  flex-shrink: 1;
+  min-width: 45%;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 2px black solid;
+  min-height: 30rem;
+}
+
+.card__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  border: 2px red solid;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 48%;
+  border-radius: 15px;
+  border: 0.5px red solid;
+  padding: 2rem;
+  max-height: 30rem;
+}
+
+.card button {
+  width: auto;
+  height: 2rem;
+  border: none;
+  background-color: salmon;
+  color: aliceblue;
+}
+
+.card button:hover {
+  cursor: pointer;
+  background-color: sandybrown;
+}
+
+.requerimiento {
+  width: 100%;
+}
